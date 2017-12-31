@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css"/>
+</head>
+<body>
+<form id="localform" action="">
+    <h2>
+        Entry Form
+    </h2>
+    <label for="name">Name:</label>
+    <input id="name" type="text" name="name">
+    <label for="age">Age:</label>
+    <input value=0 data-value="" id="age" type="range" min="0" max="120" name="age">
+    <label for="color">Color:</label>
+    <input id="color" type="color" name="color">
+    <label for="date">Date:</label>
+    <input id="date" type="date" name="date">
+    <button id="sendTo">Send to LocalStorage</button>
+</form>
+<div id="localStorageContainer">
+    <h2>
+        Local Storage List
+    </h2>
+    <ul id="thelist">
+    </ul>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
