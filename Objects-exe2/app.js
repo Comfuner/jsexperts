@@ -8,7 +8,7 @@
            this.grades.push(grade)
         },
         calcAvg: function() {
-            return this.grades.reduce(function(a,b){a + b},0) / this.grades.length;
+            return this.grades.reduce((a,b) => a + b) / this.grades.length;
         }
 
     };
