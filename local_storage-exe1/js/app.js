@@ -11,6 +11,7 @@
         // print the list on load
         printLi();
 
+
         function UpdateDb() {
             let tempObj = {
                 name : document.getElementById('name').value,
