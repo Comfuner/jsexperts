@@ -1,0 +1,7 @@
+The answer is:
+
+A1,A2,A3 will all show an alert of "4" which is the last iterated value of i, 
+the addEventListeners will be invoked in a later time so the value that they will alert will be the last iteration, which ia i = 4.
+
+B1,B2,B3 will accordingly to i will produce an alert of "1","2","3" this is because of the use of a module pattern
+where in every iteration of i the value i is passed into the inner closure return function, and waits for the listener invocation.
