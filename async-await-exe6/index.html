@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <style>
+        ul {
+            list-style-type: none;
+            -webkit-padding-start: 0;
+        }
+        ol {
+            -webkit-padding-start: 24px;
+        }
+        ul > li {
+            background: #f7f7f7;
+            box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+            padding:24px;
+            margin-bottom:12px;
+        }
+    </style>
+</head>
+<body>
+<label>Enter Country Number: </label>
+<input name="countryInput" id="countryInput" type="text" maxlength="3"/>
+<button id="getCountryBtn">Append Country Data to list</button>
+<ul id="countryList"></ul>
+<script src="js/app.js"></script>
+</body>
+</html>
