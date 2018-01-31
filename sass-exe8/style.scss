@@ -1,0 +1,42 @@
+//$class-slug: for !default
+//
+//@for $i from 1 through 4
+//.#{$class-slug}-#{$i}
+//width: 60px + $i
+
+body {
+  margin:0;padding:0;
+}
+* {
+  box-sizing:border-box;
+}
+ul {
+  font-size:0;
+  list-style-type: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+
+  @for $i from 1 through 9 {
+    li:nth-child(#{$i}):before {
+      content: "#{$i}";
+    }
+  }
+
+
+  li {
+    font-size:18px;
+    width:33.33%;
+    display:inline-block;
+    &:nth-child(odd) {
+      background: black;
+      color: pink;
+    }
+    &:nth-child(even) {
+      background: pink;
+      color: black;
+    }
+  }
+}
