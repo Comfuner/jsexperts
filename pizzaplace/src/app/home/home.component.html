@@ -1,0 +1,14 @@
+<table>
+<tr>
+  <th>Diameter</th>
+  <th>Slices</th>
+  <th>Toppings</th>
+  <th>Price</th>
+</tr>
+<tr *ngFor = 'let x of pizzas'>
+  <td>{{x.Diameter}}cm</td>
+  <td>{{x.Slices}}</td>
+  <td>{{x.Toppings}}</td>
+  <td>₪{{x.Price}}</td>
+</tr>
+</table>

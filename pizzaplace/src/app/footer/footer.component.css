@@ -1,0 +1,9 @@
+p {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  background:darkgrey;
+  font-size:12px;
+  display:block;
+  text-align:center;
+  padding:12px;
+}
